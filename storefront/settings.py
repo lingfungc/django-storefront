@@ -30,13 +30,18 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# * Each app provides certain piece of functionality
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    # * We don't use sessions app to manage user's state nowadays
+    # 'django.contrib.sessions',
     'django.contrib.messages',
+    # * Wwe use staticfiles app for serving static files like images and css files ...
     'django.contrib.staticfiles',
+    # * Whenever we create a new app, we need to include the app here
+    'playground'
 ]
 
 MIDDLEWARE = [
