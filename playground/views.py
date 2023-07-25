@@ -15,4 +15,9 @@ from django.http import HttpResponse
 # * We need to map this view (request handler) to a url in 'urls.py'
 
 def say_hello(request):
-    return HttpResponse('Hello World')
+    # return HttpResponse('Hello World')
+
+    # 1st argument: The "request" itself
+    # 2nd argument: The HTML file name
+    # 3rd argument: The mapping object (which is dictionary in Python)
+    return render(request, 'hello.html', {'name': 'lingfungc'})
