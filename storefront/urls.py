@@ -20,10 +20,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+import debug_toolbar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # When there is a request to url starting with '/playground/'
-    # Then, django will pass the request to 'playground.urls.py' for handling
-    path('playground/', include('playground.urls'))
+    # Then django will pass the request to 'playground.urls.py' for handling
+    path('playground/', include('playground.urls')),
+    path('__debug__/', include(debug_toolbar.urls))
 ]

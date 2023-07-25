@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     # * Wwe use staticfiles app for serving static files like images and css files ...
     'django.contrib.staticfiles',
     # * Whenever we create a new app, we need to include the app here
-    'playground'
+    'playground',
+    'debug_toolbar'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
+]
+
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 ROOT_URLCONF = 'storefront.urls'

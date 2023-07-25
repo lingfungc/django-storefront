@@ -1,8 +1,20 @@
-<!-- This block of code is not working for the if-else statement in this HTML file -->
-<!-- {% if name %}
-<h1>Hello {{name}} from Django</h1>
-{% else &}
-<h1>Hello World from Django</h1>
-{% endif %} -->
+<!-- The django debug toolbar only works with a proper HTML file -->
+<!-- With <html /> and <body /> elements -->
 
-<h1>Hello {{name}} from Django</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head> -->
+  <body>
+    <!-- <h1>Hello {{name}} from Django</h1> -->
+
+    {% if name %}
+    <h1>Hello {{name}} from Django</h1>
+    {% else %}
+    <h1>Hello World from Django</h1>
+    {% endif %}
+  </body>
+</html>
