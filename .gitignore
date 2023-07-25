@@ -1,0 +1,5 @@
+# Run and Debug settings
+.vscode
+
+# Debug data
+__pycache__
