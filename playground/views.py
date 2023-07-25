@@ -1,6 +1,6 @@
 # Create your views here.
 
-# * This "views" is essentially a request handler, which is not about HTML file
+# * This 'views' is essentially a request handler, which is not about HTML file
 # * Take a Request -> Return a Response
 
 
@@ -12,5 +12,7 @@ from django.http import HttpResponse
 # Transform data
 # Send email
 
+# * We need to map this view (request handler) to a url in 'urls.py'
+
 def say_hello(request):
-    return HttpResponse("Hello World")
+    return HttpResponse('Hello World')

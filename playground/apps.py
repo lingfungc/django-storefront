@@ -1,6 +1,6 @@
 # Set up your configurations here.
 
-# * This "apps.py" is for configuring our application
+# * This 'apps.py' is for configuring our application
 
 from django.apps import AppConfig
 
